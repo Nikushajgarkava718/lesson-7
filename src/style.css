@@ -37,6 +37,40 @@ img {
   padding: 20px 0;
   background-color: red;
   min-height: 600px;
+  background-size: cover;
+  background-position: center;
+  background-image:
+    linear-gradient(45deg, rgba(255, 0, 0, 0.5), rgba(0, 0, 255, 0.5)),
+    url("../src/img/22.jpg");
+  background-clip: text;
+  color: transparent;
+}
 
-  background-image: url("../src/img/22.jpg");
+.paragraph {
+  margin: 100px 0;
+  font-size: 40px;
+}
+
+button {
+  padding: 10px 20px;
+  border: 5px solid;
+  background-color: darkcyan;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.7s ease;
+
+  /*&:hover {
+    padding: 20px 30px;
+    font-size: 20px;
+    background-color: blueviolet;
+  } */
+
+  animation-name: spin;
+  animation-duration: 5s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-direction: normal;
 }
